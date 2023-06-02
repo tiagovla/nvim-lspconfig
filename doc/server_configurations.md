@@ -589,6 +589,9 @@ require'lspconfig'.arduino_language_server.setup{}
   - `capabilities` : 
   ```lua
   {
+    general = {
+      positionEncodings = { "utf-8", "utf-16", "utf-32" }
+    },
     textDocument = {
       callHierarchy = {
         dynamicRegistration = false
